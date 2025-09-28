@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run the compiled binary
-output=$(./hello_github)
+output=$(./main)
 
 # Expected output
 expected="Hello, Github!"
