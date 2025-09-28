@@ -28,4 +28,4 @@ jobs:
 
     - name: Run test script
       working-directory: build
-      run: ../tests/test_output.sh
+      run: ../tests/test.sh
