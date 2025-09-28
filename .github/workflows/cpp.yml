@@ -26,6 +26,14 @@ jobs:
     - name: Build the project
       run: cmake --build build
 
-    - name: Run test script
+    - name: Make test scripts executable
+      run: chmod +x ../tests/*.sh
+      working-directory: build
+
+    - name: Run hello_github script
       working-directory: build
       run: ../tests/test.sh
+
+    - name: Run vector script
+      working-directory: build
+      run: ../tests/vecTest.sh

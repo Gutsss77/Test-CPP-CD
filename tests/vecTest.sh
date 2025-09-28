@@ -1,14 +1,10 @@
 #!/bin/bash
 
-# Run the compiled binary
-output=$(./main)
+output=$(./vec)
+expected="1 2 3 4 5 6 7 8 9 10 "
 
-# Expected output
-expected="Hello, Github!"
-
-# Check the result
 if [ "$output" == "$expected" ]; then
-    echo "✅ Test passed 1"
+    echo "Test passed!!"
     exit 0
 else
     echo "❌ Test failed"
